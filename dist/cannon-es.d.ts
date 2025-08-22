@@ -795,6 +795,7 @@ declare module "world/World" {
         quatNormalizeSkip: number;
         quatNormalizeFast: boolean;
         time: number;
+        simulationTime: number;
         stepnumber: number;
         default_dt: number;
         nextId: number;
@@ -822,7 +823,6 @@ declare module "world/World" {
             integrate: number;
             narrowphase: number;
         };
-        accumulator: number;
         subsystems: any[];
         addBodyEvent: {
             type: 'addBody';
